@@ -2,8 +2,8 @@ import axios from 'axios';
 
 // Create a configured axios instance
 const axiosInstance = axios.create({
-  baseURL: import.meta.env.PROD
-    ? 'https://faculty-appointment-backend.onrender.com'
+  baseURL: import.meta.env.PROD 
+    ? 'https://faculty-appointment-backend.onrender.com/api' 
     : '/api',
   headers: { 'Content-Type': 'application/json' },
   timeout: 10000,
